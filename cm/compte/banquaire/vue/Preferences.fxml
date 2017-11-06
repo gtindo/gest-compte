@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="380.0" styleClass="background"
+	stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.60"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="cm.compte.banquaire.vue.PreferencesController">
+	<children>
+		<Label alignment="CENTER" contentDisplay="CENTER" layoutX="114.0"
+			layoutY="14.0" prefHeight="52.0" prefWidth="300.0" styleClass="label-header"
+			text="Nombres d'operations a afficher" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<font>
+				<Font size="17.0" />
+			</font>
+		</Label>
+		<MenuButton fx:id="menuPreference" alignment="CENTER"
+			layoutX="90.0" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0"
+			prefWidth="204.0" text="Nombres d'operations">
+			<items>
+				<MenuItem fx:id="tenElements" mnemonicParsing="false"
+					text="10 dernieres operations" />
+				<MenuItem fx:id="twentyElements" mnemonicParsing="false"
+					text="20 dernieres operations" />
+				<MenuItem fx:id="allElements" mnemonicParsing="false"
+					text="Toutes les opertions" />
+			</items>
+		</MenuButton>
+		<ButtonBar layoutX="39.0" layoutY="146.0" prefHeight="40.0"
+			prefWidth="278.0">
+			<buttons>
+				<Button fx:id="valider" alignment="CENTER" contentDisplay="BOTTOM"
+					mnemonicParsing="false" onAction="#validerHandled" prefHeight="33.0"
+					text="Valider" />
+				<Button fx:id="annuler" contentDisplay="BOTTOM"
+					mnemonicParsing="false" onAction="#annulerHandled" prefHeight="33.0"
+					prefWidth="126.0" text="Anuler" />
+			</buttons>
+		</ButtonBar>
+	</children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="630.0" prefWidth="1024" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cm.compte.banquaire.vue.ConteneurPrincipalController">
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="Fichier">
+					<items>
+						<MenuItem fx:id="deconnexion" mnemonicParsing="false" onAction="#deconnexionHandled" text="Deconnexion" />
+						<MenuItem fx:id="sortie" mnemonicParsing="false" onAction="#exitHandled" text="Fermer" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Operations">
+					<items>
+						<Menu mnemonicParsing="false" text="Crediter">
+							<items>
+								<MenuItem fx:id="crediteMonCompte" mnemonicParsing="false" onAction="#crediteMonCompteHandled" text="Mon compte" />
+								<MenuItem fx:id="crediterAutreCompte" mnemonicParsing="false" onAction="#crediterAutreCompteHandled" text="Un autre compte" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Debiter">
+							<items>
+								<MenuItem fx:id="debiterMonCompte" mnemonicParsing="false" onAction="#debiteMonCompteHandled" text="Mon compte" />
+							</items>
+						</Menu>
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Statistiques">
+					<items>
+						<Menu mnemonicParsing="false" text="Diagramme">
+							<items>
+								<MenuItem fx:id="diagrammeMotif" mnemonicParsing="false" onAction="#diagrammeMotifHandled" text="Operation par Motif" />
+								<MenuItem fx:id="diagrammeMoyen" mnemonicParsing="false" onAction="#diagrammeMoyenHandled" text="Operation par Moyen" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Camember">
+							<items>
+								<MenuItem fx:id="camemberOperation" mnemonicParsing="false" onAction="#camemberOperationHandled" text="Pourcentage par type d'operation" />
+							</items>
+						</Menu>
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Parametres">
+					<items>
+						<MenuItem fx:id="changerMotDePasse" mnemonicParsing="false" onAction="#changerMotDePasseHandled" text="Changer de mot de passe" />
+						<MenuItem fx:id="supprimerCompte" mnemonicParsing="false" onAction="#supprimerCompteHandled" text="Suprimer mon compte" />
+						<MenuItem fx:id="preferences" mnemonicParsing="false" onAction="#preferencesHandled" text="Preferences" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Aide">
+					<items>
+						<MenuItem fx:id="aide" mnemonicParsing="false" onAction="#aideHandled" text="Aide" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+</BorderPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0"
+	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60">
+	<children>
+		<TextArea prefHeight="500.0" prefWidth="600.0"
+			text="Aide du programme de gestion d'un compte banquaire&#10;&#10;Description detaillee de chaque option du menu :&#10;&#10;- Fichier&#10;        - Deconnexion : Permet de se deconnecter&#10;        - Fermer : permet de fermer le programme&#10;&#10;- Operation : permet realiser des operations de debit ou de credit&#10;&#10;- Statistique : permet d'afficher des statistiques sur les operations effectuees&#10;&#10;- Parametres : pour changer de mot de passe, supprimer son compte ou &#10;                        changer le nombre d'operations a effectuer&#10;&#10;&#10;A propos : Ce programme a ete realise par GUEKENG TINDO Yvan.&#10;&#10; &#10;&#10;&#10;&#10;"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextArea>
+	</children>
+</AnchorPane>
